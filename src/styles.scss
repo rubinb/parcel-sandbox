@@ -1,0 +1,13 @@
+body {
+    background-color: #d8d8d8;
+    margin: 0;
+    padding: 0;
+
+    & .app-block {
+        padding: 12px 0;
+    }
+}
+
+.content {
+    min-height: 400px;
+}
