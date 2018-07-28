@@ -1,0 +1,16 @@
+{
+    "navigation": [
+        {
+            "name": "Home",
+            "url": "/",
+            "active": true,
+            "subCategories": []
+        },
+        {
+            "name": "Sample 1",
+            "url": "/page-two",
+            "active": true,
+            "subCategories": []
+        }
+    ]
+}
