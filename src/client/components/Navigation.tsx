@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 // import { Button } from 'semantic-ui-react';
+import NavItem from './NavItems';
 
 class Navigation extends Component<any, any> {
     constructor(props: any) {
@@ -21,7 +21,7 @@ class Navigation extends Component<any, any> {
     render(): JSX.Element {
         const { navItems } = this.state;
         const Navigation = navItems.map((el: any, i: number) => {
-            return (<li key={i}><Link to={el.url}>{el.name}</Link></li>);
+            return <NavItem key={i} index={i} {...el} />;
         });
 
         return (
